@@ -1,0 +1,171 @@
+div.claim-fund {
+  color: #333;
+}
+
+div.claim-fund nav.navigation {
+  height: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  border-bottom: 1px solid lightgrey;
+}
+
+div.claim-fund nav.navigation.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 30000;
+}
+
+div.claim-fund nav.navigation.sticky div.burger {
+  height: 20px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.claim-fund nav.navigation.sticky div.burger div {
+  height: 3px;
+  background: #444;
+  width: 100%;
+}
+
+div.claim-fund nav.navigation.sticky a.brand {
+  color: #444;
+}
+
+div.claim-fund nav.navigation.sticky div.links {
+  display: none;
+}
+
+div.claim-fund nav.navigation.sticky div.links li a {
+  color: #333;
+}
+
+div.claim-fund nav.navigation a.brand {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+div.claim-fund nav.navigation div.burger {
+  height: 20px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.claim-fund nav.navigation div.burger div {
+  height: 3px;
+  background: #333;
+  width: 100%;
+}
+
+div.claim-fund nav.navigation div.mobile-link {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  width: 100vw;
+  height: 50vh;
+  background: #fff;
+  color: #444;
+  padding-top: 20px;
+  -webkit-transform: translateY(-60vh);
+          transform: translateY(-60vh);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  display: block;
+}
+
+div.claim-fund nav.navigation div.mobile-link button.close-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bolder;
+  background: transparent;
+  color: red;
+  font-size: 35px;
+}
+
+div.claim-fund nav.navigation div.mobile-link.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+div.claim-fund nav.navigation div.mobile-link ul li {
+  display: block;
+}
+
+div.claim-fund nav.navigation div.mobile-link ul li a {
+  display: block;
+  padding: 10px 0;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div.claim-fund nav.navigation div.links {
+  display: none;
+}
+
+div.claim-fund nav.navigation div.links li a {
+  padding: 0 20px;
+  color: #444;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+div.claim-fund nav.navigation div.links li a:hover {
+  color: slateblue;
+}
+
+div.claim-fund main {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  main {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  div.burger {
+    display: none !important;
+  }
+  div.links {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=other.css.map */
